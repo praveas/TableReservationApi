@@ -18,6 +18,8 @@ namespace Commander.Models
         public string BookingName { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime BookingDate { get; set; }
 
         [Required]
